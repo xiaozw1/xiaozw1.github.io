@@ -1,0 +1,34 @@
+name: deploy blog
+
+on:
+  push:
+    branches:
+      - master  # 或者是你的源代码分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: "latest"
+        extended: true
+
+    - name: Build and Deploy
+      run: |
+        hugo -D -F --cleanDestinationDir  # 生成静态文件
+        mkdir -p public  # 确保public文件夹存在
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        PERSONAL_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # 你的个人访问令牌
+        EXTERNAL_REPOSITORY: ricohgag/ricohgag.github.io  # 你的GitHub Pages仓库
+        PUBLISH_BRANCH: blog  # 或者是你的GitHub Pahugo_next_avatarges分支
+        PUBLISH_DIR: ./public
+        commit_message: ${{ github.event.head_commit.message }}
