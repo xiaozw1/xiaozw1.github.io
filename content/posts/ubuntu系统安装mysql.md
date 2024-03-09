@@ -31,4 +31,4 @@ sudo systemctl status mysql
 复制代码运行
 5. 如果一切正常，你应该能看到MySQL服务处于运行状态。
 
-![这是图片](../static/img.png)
+![abc](https://raw.githubusercontent.com/xiaozw1/picgo/main/img/20240309171553.png)
