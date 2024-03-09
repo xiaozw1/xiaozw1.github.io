@@ -1,5 +1,5 @@
 +++
-title = '在'
+title = '在ubuntu系统里安装mysql'
 date = 2024-03-09T16:49:05+08:00
 draft = true
 +++
@@ -30,3 +30,5 @@ sudo systemctl status mysql
 
 复制代码运行
 5. 如果一切正常，你应该能看到MySQL服务处于运行状态。
+
+![这是图片](../static/img.png)
