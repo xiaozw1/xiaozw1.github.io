@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>App</title><url>/posts/app/</url><categories/><tags/><content type="html"> 大厦发射点发射点</content></entry><entry><title>First</title><url>/posts/first/</url><categories/><tags/><content type="html"> ABC啊地方</content></entry><entry><title>关于</title><url>/about/</url><categories/><tags/><content type="html"> ricohgag 最低级INTP，无时无刻不在想放弃，每时每刻都在拖延，自我认知为废物，单身狗一只；唯胜在心态乐观，信老子，不信道教，客观唯物主义者。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>VirtualBox安装ubuntu系统</title><url>/posts/virtualbox%E5%AE%89%E8%A3%85ubuntu%E7%B3%BB%E7%BB%9F/</url><categories/><tags/><content type="html"> 下载Ubuntu的ISO镜像文件。 打开VirtualBox，点击“新建”按钮创建一个新的虚拟机。 在虚拟机设置中，选择刚刚下载的Ubuntu ISO镜像文件作为启动盘。 按照向导的提示完成虚拟机的设置，包括分配内存、硬盘空间等。 启动虚拟机并按照Ubuntu的安装向导完成系统的安装。</content></entry><entry><title>在</title><url>/posts/ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85mysql/</url><categories/><tags/><content type="html"> 在ubuntu系统里安装mysql 打开终端，输入以下命令更新软件包列表： sudo apt-get update
+复制代码运行 2. 输入以下命令安装MySQL服务器：
+sudo apt-get install mysql-server
+复制代码运行 3. 安装过程中，系统会提示你设置MySQL的root用户密码。设置好密码后， MySQL服务器将自动启动。 4. 使用以下命令检查MySQL服务的状态：
+sudo systemctl status mysql
+复制代码运行 5. 如果一切正常，你应该能看到MySQL服务处于运行状态。</content></entry><entry><title>关于</title><url>/about/</url><categories/><tags/><content type="html"> ricohgag 最低级INTP，无时无刻不在想放弃，每时每刻都在拖延，自我认知为废物，单身狗一只；唯胜在心态乐观，信老子，不信道教，客观唯物主义者。
 积极思考存在，不会给时间赋于意义，也不想给岁月以文明，好好享受活着，毕竟在时间刻度上只有这一段是真正属于你的。</content></entry><entry><title>DDIA-Part8: 分布式系统挑战</title><url>/read_note/ddia/%E5%85%AB%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%8C%91%E6%88%98/</url><categories/><tags/><content type="html"> 故障与部分失效 分布式系统中，可能会出现系统一部分工作正常，但某些部分出现难以预测的故障，即部分生效。正是不确定性和部分失效提高了分布式系统的复杂性。
 不可靠的网络 请求丢失
 远程节点异常
